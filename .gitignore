@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title id="metaTitle">وزیرآباد سٹی اپڈیٹ پورٹل | آن لائن بزنس ڈائریکٹری و سٹی گائیڈ</title>
+  
+  <meta property="og:title" content="وزیرآباد سٹی اپڈیٹ پورٹل - ڈائریکٹری، خبریں و روزگار">
+  <meta property="og:description" content="وزیرآباد شہر کی واحد اپڈیٹڈ بزنس ڈائریکٹری، روزانہ کی تازہ ترین خبریں، ٹرین ٹائم ٹیبل اور وائس سرچ۔">
+  <meta property="og:type" content="website">
+
+  <!-- 🟢 Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;600;700;800;900&family=Noto+Sans+Arabic:wght@400;600;700;800&family=Tajawal:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    :root {
+      --bg-main: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-color: #e2e8f0;
+      
+      --brand-dark: #090d16;
+      --brand-navy: #1e293b;
+      --accent-cyan: #0284c7;
+      --accent-teal: #0d9488;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #e11d48;
+      --whatsapp-color: #25d366;
+
+      --card-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+      --hover-shadow: 0 20px 30px -10px rgba(2, 132, 199, 0.15);
+    }
+
+    body.dark-mode {
+      --bg-main: #06090e;
+      --card-bg: #111827;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-color: #1e293b;
+      --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    
+    body {
+      font-family: 'Noto Sans Arabic', 'Alexandria', 'Tajawal', sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 85px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Top Status Bar */
+    .top-status-bar {
+      background: var(--brand-dark);
+      color: #cbd5e1;
+      padding: 8px 18px;
+      font-size: 0.82rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .status-items { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .status-badge {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px 12px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex; align-items: center; gap: 6px; font-weight: 600;
+    }
+    .status-badge i { color: #38bdf8; }
+    .emergency-group { display: flex; gap: 6px; }
+    .emergency-badge {
+      background: rgba(225, 29, 72, 0.2); color: #fecdd3;
+      padding: 4px 12px; border-radius: 30px; text-decoration: none;
+      font-weight: 700; border: 1px solid rgba(225, 29, 72, 0.4); transition: 0.2s;
+    }
+    .emergency-badge:hover { background: var(--accent-rose); color: white; }
+
+    /* Breaking Ticker */
+    .ticker-bar {
+      background: #020617; display: flex; align-items: center;
+      height: 42px; overflow: hidden; border-bottom: 2px solid var(--accent-rose);
+    }
+    .ticker-label {
+      background: linear-gradient(135deg, var(--accent-rose), #be123c);
+      color: white; padding: 0 18px; height: 100%; display: flex;
+      align-items: center; font-weight: 800; font-size: 0.85rem; white-space: nowrap;
+      z-index: 2; box-shadow: 4px 0 12px rgba(0,0,0,0.5);
+    }
+    .ticker-content { white-space: nowrap; overflow: hidden; width: 100%; }
+    .ticker-text-scroll {
+      display: inline-block; padding-right: 100%;
+      animation: marquee 30s linear infinite; color: #38bdf8; font-weight: 700; font-size: 0.9rem;
+    }
+    @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(100%, 0); } }
+
+    /* Header Section */
+    header {
+      background: linear-gradient(180deg, var(--brand-dark) 0%, var(--brand-navy) 100%);
+      color: white; padding: 25px 18px 30px 18px; text-align: center;
+      position: relative; border-bottom: 3px solid var(--accent-cyan);
+    }
+    .brand-header {
+      display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; margin-bottom: 18px;
+    }
+    .brand-logo-img {
+      width: 105px; height: 105px; border-radius: 50%; border: 4px solid #38bdf8;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5); object-fit: cover;
+    }
+    .brand-text h1 { font-size: 1.85rem; color: #ffffff; font-weight: 900; line-height: 1.2; font-family: 'Alexandria', sans-serif; }
+    .brand-text p { color: #94a3b8; font-size: 0.9rem; font-weight: 600; margin-top: 4px; }
+
+    .header-ctrls { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+    .ctrl-pill {
+      padding: 8px 18px; border-radius: 30px; border: none; font-weight: 700; font-size: 0.85rem;
+      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+      transition: all 0.2s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .ctrl-pill:active { transform: scale(0.95); }
+    .pill-app { background: linear-gradient(135deg, var(--accent-emerald), #059669); color: white; }
+    .pill-wa { background: var(--whatsapp-color); color: white; }
+    .pill-lang { background: linear-gradient(135deg, var(--accent-cyan), #0369a1); color: white; }
+    .pill-theme { background: rgba(255,255,255,0.12); color: white; border: 1px solid rgba(255,255,255,0.2); }
+
+    /* Search Bar */
+    .search-box-wrap { max-width: 650px; margin: 0 auto; position: relative; }
+    .search-box-input {
+      width: 100%; padding: 15px 95px 15px 20px; font-size: 0.95rem; border-radius: 35px;
+      border: 2px solid rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.98);
+      color: #0f172a; outline: none; font-family: inherit; font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: all 0.3s;
+    }
+    .search-box-input:focus { border-color: #38bdf8; box-shadow: 0 0 25px rgba(56, 189, 248, 0.5); }
+    .search-box-icon { position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--brand-navy); font-size: 1.1rem; }
+    
+    .voice-search-btn {
+      position: absolute; right: 52px; top: 50%; transform: translateY(-50%);
+      background: rgba(2, 132, 199, 0.15); border: none; width: 34px; height: 34px;
+      border-radius: 50%; color: var(--accent-cyan); font-size: 1rem;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s;
+    }
+    .voice-search-btn:hover { background: var(--accent-cyan); color: white; }
+    .voice-search-btn.listening { background: var(--accent-rose); color: white; animation: pulse 1s infinite; }
+    @keyframes pulse { 0% { transform: translateY(-50%) scale(1); } 50% { transform: translateY(-50%) scale(1.15); } 100% { transform: translateY(-50%) scale(1); } }
+
+    /* Navigation Tabs Bar */
+    .nav-tabs-bar {
+      display: flex; gap: 10px; overflow-x: auto; padding: 12px 18px;
+      background: var(--card-bg); border-bottom: 1px solid var(--border-color);
+      scrollbar-width: none; position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+    .nav-tabs-bar::-webkit-scrollbar { display: none; }
+    .app-tab-item {
+      flex: 0 0 auto; padding: 9px 20px; border-radius: 30px; border: 1px solid var(--border-color);
+      background: var(--bg-main); color: var(--text-muted); font-weight: 800; font-size: 0.88rem;
+      cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all 0.25s ease;
+    }
+    .app-tab-item.active {
+      background: linear-gradient(135deg, var(--brand-navy), var(--brand-dark));
+      color: #38bdf8; border-color: #38bdf8; box-shadow: 0 6px 15px rgba(56, 189, 248, 0.25);
+    }
+
+    /* Market Rates Bar */
+    .market-rates-box {
+      max-width: 1300px; margin: 15px auto 0 auto; padding: 12px 18px; background: var(--card-bg);
+      border-radius: 16px; border: 1px solid var(--border-color); box-shadow: var(--card-shadow);
+      display: flex; align-items: center; gap: 15px; overflow-x: auto; scrollbar-width: none;
+    }
+    .market-title { font-weight: 800; font-size: 0.85rem; color: var(--accent-rose); white-space: nowrap; display: flex; align-items: center; gap: 6px; }
+    .rate-item { background: var(--bg-main); padding: 4px 12px; border-radius: 10px; font-weight: 700; font-size: 0.8rem; white-space: nowrap; border: 1px solid var(--border-color); }
+
+    /* Sponsored Ad Banner */
+    .sponsored-banner {
+      max-width: 1300px; margin: 15px auto; padding: 14px 20px; border-radius: 18px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      border: 1.5px dashed #38bdf8; color: white; text-align: center;
+      position: relative; box-shadow: var(--card-shadow);
+    }
+    .ad-tag {
+      position: absolute; top: -10px; right: 20px; background: var(--accent-amber);
+      color: #000; font-weight: 900; font-size: 0.7rem; padding: 2px 10px; border-radius: 12px;
+    }
+    html[dir="ltr"] .ad-tag { right: auto; left: 20px; }
+
+    /* Category Chips */
+    .category-pills-bar {
+      display: flex; gap: 8px; overflow-x: auto; padding: 0 18px 10px 18px;
+      scrollbar-width: none; max-width: 1300px; margin: 0 auto;
+    }
+    .category-pills-bar::-webkit-scrollbar { display: none; }
+    .cat-chip {
+      flex: 0 0 auto; padding: 7px 15px; border-radius: 25px; font-size: 0.82rem; font-weight: 700;
+      background: var(--card-bg); color: var(--text-main); border: 1px solid var(--border-color);
+      cursor: pointer; transition: 0.2s;
+    }
+    .cat-chip.active, .cat-chip:hover {
+      background: var(--brand-navy); color: #38bdf8; border-color: #38bdf8;
+    }
+
+    /* Main Grid */
+    .main-container {
+      max-width: 1300px; margin: 15px auto; padding: 0 18px;
+      display: grid; grid-template-columns: 280px 1fr; gap: 20px;
+    }
+
+    .sidebar-panel {
+      background: var(--card-bg); padding: 18px; border-radius: 18px;
+      border: 1px solid var(--border-color); max-height: 80vh; overflow-y: auto;
+      box-shadow: var(--card-shadow);
+    }
+    .sidebar-panel h3 {
+      font-size: 1rem; font-weight: 800; margin-bottom: 12px; padding-bottom: 8px;
+      border-bottom: 2px solid #38bdf8; display: flex; justify-content: space-between;
+    }
+    .cat-list-ul { list-style: none; }
+    .cat-list-item {
+      padding: 9px 12px; margin-bottom: 3px; border-radius: 10px; cursor: pointer;
+      font-size: 0.86rem; font-weight: 700; color: var(--text-muted); transition: 0.2s;
+    }
+    .cat-list-item:hover, .cat-list-item.active {
+      background: rgba(56, 189, 248, 0.1); color: #0284c7; font-weight: 800;
+    }
+
+    .cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; }
+
+    .app-card {
+      background: var(--card-bg); border-radius: 18px; padding: 18px;
+      border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;
+      box-shadow: var(--card-shadow); transition: all 0.3s ease; position: relative; overflow: hidden;
+    }
+    .app-card:hover { transform: translateY(-4px); box-shadow: var(--hover-shadow); }
+
+    .card-top-row { display: flex; justify-content: space-between; align-items: flex-start; }
+    .card-badge {
+      display: inline-block; padding: 3px 10px; border-radius: 15px; font-size: 0.74rem;
+      font-weight: 800; background: rgba(56, 189, 248, 0.12); color: #0284c7; margin-bottom: 8px;
+    }
+    .fav-btn {
+      background: none; border: none; font-size: 1.1rem; color: var(--text-muted);
+      cursor: pointer; transition: 0.2s;
+    }
+    .fav-btn.active { color: var(--accent-rose); }
+
+    .card-actions-grid { display: grid; grid-template-columns: 1fr 1fr 40px; gap: 8px; margin-top: 14px; }
+    .card-btn {
+      padding: 9px; border-radius: 10px; text-align: center; text-decoration: none;
+      font-weight: 800; font-size: 0.85rem; color: white; display: flex; align-items: center;
+      justify-content: center; gap: 6px; transition: 0.2s; border: none; cursor: pointer;
+    }
+    .card-btn:active { transform: scale(0.96); }
+    .btn-call { background: var(--brand-navy); border: 1px solid #0284c7; color: #0284c7; }
+    .btn-call:hover { background: #0284c7; color: #fff; }
+    .btn-wa { background: var(--whatsapp-color); color: white; }
+    .btn-share { background: rgba(255,255,255,0.08); border: 1px solid var(--border-color); color: var(--text-main); font-size: 1rem; }
+
+    /* Admin Inline Controls on Cards (Shown only when admin is logged in) */
+    .admin-card-actions {
+      display: flex; gap: 6px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border-color);
+    }
+    .admin-edit-btn { background: #0284c7; color: white; border: none; padding: 5px 12px; border-radius: 8px; font-weight: 800; font-size: 0.78rem; cursor: pointer; flex: 1; }
+    .admin-del-btn { background: var(--accent-rose); color: white; border: none; padding: 5px 12px; border-radius: 8px; font-weight: 800; font-size: 0.78rem; cursor: pointer; flex: 1; }
+
+    /* Transport Table Styling */
+    .transport-table {
+      width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 0.88rem;
+    }
+    .transport-table th, .transport-table td {
+      padding: 12px; border: 1px solid var(--border-color); text-align: inherit;
+    }
+    .transport-table th { background: var(--brand-navy); color: #38bdf8; font-weight: 800; }
+
+    /* Customer Form */
+    .customer-panel-container {
+      max-width: 1300px; margin: 35px auto 20px auto; padding: 25px;
+      background: var(--card-bg); border-radius: 20px; border: 2px solid var(--whatsapp-color);
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.12);
+    }
+    .panel-header-title {
+      color: var(--whatsapp-color); font-size: 1.25rem; font-weight: 900;
+      text-align: center; margin-bottom: 6px; display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+
+    .form-grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); margin-top: 18px; }
+    .form-group label { display: block; font-weight: 800; margin-bottom: 6px; font-size: 0.85rem; }
+    .form-input-ctrl {
+      width: 100%; padding: 11px 15px; border: 1.5px solid var(--border-color); border-radius: 12px;
+      font-family: inherit; font-size: 0.9rem; background: var(--bg-main); color: var(--text-main); outline: none; transition: 0.2s;
+    }
+    .form-input-ctrl:focus { border-color: var(--whatsapp-color); box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.15); }
+    
+    /* Custom Searchable Select Styling */
+    .custom-select-wrapper { position: relative; width: 100%; }
+    .custom-select-search {
+      width: 100%; padding: 11px 15px; border: 1.5px solid var(--border-color); border-radius: 12px;
+      font-family: inherit; font-size: 0.9rem; background: var(--bg-main); color: var(--text-main); outline: none;
+    }
+    .custom-select-dropdown {
+      position: absolute; top: 105%; left: 0; width: 100%; max-height: 220px; overflow-y: auto;
+      background: var(--card-bg); border: 1.5px solid var(--whatsapp-color); border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15); z-index: 50; display: none; text-align: inherit;
+    }
+    .custom-select-option {
+      padding: 10px 15px; font-size: 0.88rem; font-weight: 700; cursor: pointer; border-bottom: 1px solid var(--border-color);
+      color: var(--text-main); transition: 0.15s;
+    }
+    .custom-select-option:hover { background: rgba(37, 211, 102, 0.12); color: var(--whatsapp-color); }
+
+    .btn-submit-req {
+      background: linear-gradient(135deg, var(--whatsapp-color), #16a34a); color: white;
+      padding: 12px 28px; border: none; border-radius: 12px; font-weight: 800; font-size: 0.95rem;
+      cursor: pointer; transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
+    }
+
+    /* Mobile Bottom Nav */
+    .mobile-bottom-bar {
+      position: fixed; bottom: 0; left: 0; width: 100%;
+      background: rgba(9, 13, 22, 0.96); backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex; justify-content: space-around; align-items: center;
+      padding: 9px 0 11px 0; z-index: 1000;
+    }
+    .bottom-tab-item {
+      color: #94a3b8; text-decoration: none; font-size: 0.72rem; font-weight: 700;
+      display: flex; flex-direction: column; align-items: center; gap: 4px; flex: 1; cursor: pointer;
+    }
+    .bottom-tab-item i { font-size: 1.25rem; transition: 0.2s; }
+    .bottom-tab-item.active { color: #38bdf8; }
+
+    /* Footer */
+    footer {
+      background: var(--brand-dark); color: #f8fafc; margin-top: 45px;
+      padding: 40px 18px 25px 18px; border-top: 3px solid var(--accent-cyan);
+    }
+    .footer-grid {
+      max-width: 1300px; margin: 0 auto; display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px;
+      padding-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-col h3 {
+      color: #38bdf8; font-size: 1rem; font-weight: 800; margin-bottom: 12px;
+      padding-bottom: 4px; border-bottom: 2px solid var(--accent-cyan); display: inline-block;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85); backdrop-filter: blur(8px);
+      display: none; justify-content: center; align-items: center; z-index: 2000;
+    }
+    .modal-content {
+      background: var(--card-bg); color: var(--text-main); padding: 24px; border-radius: 20px;
+      width: 92%; max-width: 560px; max-height: 85vh; overflow-y: auto; border: 2px solid var(--accent-cyan);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6); text-align: inherit;
+    }
+
+    @media (max-width: 900px) {
+      .main-container { grid-template-columns: 1fr; }
+      .sidebar-panel { display: none; }
+      .brand-text h1 { font-size: 1.45rem; }
+      .top-status-bar { justify-content: center; }
+    }
+  </style>
+</head>
+<body dir="rtl">
+
+  <!-- Top Status Bar -->
+  <div class="top-status-bar">
+    <div class="status-items">
+      <div class="status-badge" id="liveClockDisplay"><i class="fa-solid fa-clock"></i> وقت دیکھ رہے ہیں...</div>
+      <div class="status-badge" id="namazDisplay"><i class="fa-solid fa-mosque"></i> <span data-i18n="nextPrayer">اگلی نماز: ظہر (01:15)</span></div>
+      <div class="status-badge" id="weatherDisplay"><i class="fa-solid fa-cloud-sun"></i> وزیرآباد: 26°C ⛅</div>
+    </div>
+
+    <div class="emergency-group">
+      <a href="tel:1122" class="emergency-badge"><i class="fa-solid fa-truck-medical"></i> 1122</a>
+      <a href="tel:15" class="emergency-badge"><i class="fa-solid fa-shield-halved"></i> 15</a>
+    </div>
+  </div>
+
+  <!-- News Ticker -->
+  <div class="ticker-bar">
+    <div class="ticker-label"><i class="fa-solid fa-bolt"></i> <span data-i18n="breakingNews">اہم خبریں</span></div>
+    <div class="ticker-content">
+      <div class="ticker-text-scroll" id="tickerContent">
+        وزیرآباد سٹی اپڈیٹ پورٹل میں خوش آمدید! اردو وائس سرچ اور وزیرآباد جنکشن ٹرین ٹائم ٹیبل فعال کر دیا گیا ہے۔
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="brand-header">
+      <img src="1000753306.png" id="siteLogoImg" alt="لوگو" class="brand-logo-img" onerror="this.src='https://via.placeholder.com/105/090d16/0284c7?text=WZB'">
+      <div class="brand-text">
+        <h1 data-i18n="siteTitle">وزیرآباد سٹی اپڈیٹ پورٹل</h1>
+        <p data-i18n="siteSubtitle">بزنس ڈائریکٹری، ڈیلی نیوز، نوکریاں اور ٹرین ٹائم ٹیبل</p>
+      </div>
+    </div>
+
+    <div class="header-ctrls">
+      <button class="ctrl-pill pill-app" onclick="installPWA()"><i class="fa-solid fa-mobile-screen-button"></i> <span data-i18n="installApp">ایپ انسٹال کریں</span></button>
+      <a href="https://wa.me/923483439886?text=السلام علیکم!" target="_blank" class="ctrl-pill pill-wa"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="whatsappDesk">واٹس ایپ ڈیسک</span></a>
+      <button class="ctrl-pill pill-lang" onclick="toggleLanguage()"><i class="fa-solid fa-language"></i> <span id="langBtnText">English</span></button>
+      <button class="ctrl-pill pill-theme" onclick="toggleTheme()"><i class="fa-solid fa-moon"></i></button>
+    </div>
+
+    <!-- Search Bar with Voice Search Button -->
+    <div class="search-box-wrap">
+      <i class="fa-solid fa-magnifying-glass search-box-icon"></i>
+      <button class="voice-search-btn" id="voiceSearchBtn" onclick="startVoiceSearch()" title="اردو میں بول کر تلاش کریں">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <input type="text" id="searchInput" class="search-box-input" placeholder="تلاش کریں یا بولنے کے لیے مائیک پر کلک کریں..." onkeyup="filterContent()" data-i18n-placeholder="searchPlaceholder">
+    </div>
+  </header>
+
+  <!-- Navigation Tabs Bar -->
+  <div class="nav-tabs-bar">
+    <button class="app-tab-item active" id="tabDirBtn" onclick="switchMainTab('dir')"><i class="fa-solid fa-building-user"></i> <span data-i18n="tabDir">🏢 ڈائریکٹری</span></button>
+    <button class="app-tab-item" id="tabNewsBtn" onclick="switchMainTab('news')"><i class="fa-solid fa-newspaper"></i> <span data-i18n="tabNews">📰 تاز ترین خبریں</span></button>
+    <button class="app-tab-item" id="tabTransportBtn" onclick="switchMainTab('transport')"><i class="fa-solid fa-train"></i> <span data-i18n="tabTrans">🚆 ٹرین ٹائم ٹیبل</span></button>
+    <button class="app-tab-item" id="tabJobsBtn" onclick="switchMainTab('jobs')"><i class="fa-solid fa-briefcase"></i> <span data-i18n="tabJobs">💼 نوکریاں (Jobs)</span></button>
+    <button class="app-tab-item" id="tabClassifiedsBtn" onclick="switchMainTab('classifieds')"><i class="fa-solid fa-store"></i> <span data-i18n="tabClass">🏡 خرید و فروخت</span></button>
+    <button class="app-tab-item" id="tabFavsBtn" onclick="switchMainTab('favs')"><i class="fa-solid fa-heart" style="color:var(--accent-rose);"></i> <span data-i18n="tabFavs">❤️ پسندیدہ</span> (<span id="favCountBadge">0</span>)</button>
+  </div>
+
+  <!-- Market Rates Bar -->
+  <div class="market-rates-box">
+    <div class="market-title"><i class="fa-solid fa-chart-line"></i> <span data-i18n="marketRatesTitle">وزیرآباد ڈیلی نرخ:</span></div>
+    <div class="rate-item"><span data-i18n="rate1">🐔 مرغی (زندہ):</span> <strong>Rs. 435/kg</strong></div>
+    <div class="rate-item"><span data-i18n="rate2">🥚 انڈے (درجن):</span> <strong>Rs. 280</strong></div>
+    <div class="rate-item"><span data-i18n="rate3">🌾 آٹا (20kg):</span> <strong>Rs. 1,820</strong></div>
+    <div class="rate-item"><span data-i18n="rate4">🔥 LPG گیس:</span> <strong>Rs. 240/kg</strong></div>
+    <div class="rate-item"><span data-i18n="rate5">👑 سونا (24k):</span> <strong>Rs. 2,42,000/تولہ</strong></div>
+  </div>
+
+  <!-- Sponsored Ad Banner -->
+  <div class="sponsored-banner" id="sponsoredBannerBox">
+    <span class="ad-tag" data-i18n="sponsoredTag">اسپانسرڈ اشتہار</span>
+    <div id="sponsoredBannerContent">
+      <div style="font-weight:800; font-size:0.92rem;">
+        <span data-i18n="adText">📢 اپنا کاروبار یا نوکری کا اشتہار پورٹل پر نمایاں دکھانے کے لیے واٹس ایپ کریں:</span> <u>03483439886</u>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Chips -->
+  <div class="category-pills-bar" id="categoryPillsBar"></div>
+
+  <!-- Main Container Grid -->
+  <div class="main-container">
+    <aside class="sidebar-panel">
+      <h3><span data-i18n="sidebarTitle">شہر کی تمام کیٹگریز</span> <span style="font-size:0.8rem; color:#0284c7;" id="totalCatCount">200</span></h3>
+      <ul class="cat-list-ul" id="categoryList">
+        <li class="cat-list-item active" onclick="filterByCategory('all', this)" data-i18n="allCats">تمام کیٹگریز</li>
+      </ul>
+    </aside>
+
+    <main>
+      <div id="resultsCount" style="margin-bottom: 12px; font-weight: 800; color: var(--text-muted); font-size:0.88rem;"></div>
+      <div class="cards-grid" id="mainGrid"></div>
+    </main>
+  </div>
+
+  <!-- WhatsApp Customer Form -->
+  <div class="customer-panel-container">
+    <div class="panel-header-title">
+      <i class="fa-brands fa-whatsapp"></i> <span data-i18n="formHeading">ڈائریکٹری میں اپنا کاروبار شامل کروائیں</span>
+    </div>
+    <p style="text-align: center; font-size: 0.86rem; color: var(--text-muted);" data-i18n="formDesc">
+      اپنا نام یا دکان پورٹل میں درج کروانے کے لیے فارم پُر کریں۔ معلومات فوراً ہمارے واٹس ایپ پر موصول ہو جائیں گی۔
+    </p>
+    
+    <form onsubmit="sendCustomerRequest(event)" class="form-grid">
+      <div class="form-group">
+        <label data-i18n="labelBizName">کاروبار / دکان کا نام:*</label>
+        <input type="text" id="reqName" class="form-input-ctrl" required placeholder="مثلاً: الرحمان کٹلری">
+      </div>
+      <div class="form-group">
+        <label data-i18n="labelOwnerPhone">مالک کا نام / فون نمبر:*</label>
+        <input type="text" id="reqPhone" class="form-input-ctrl" required placeholder="03483439886">
+      </div>
+      <div class="form-group" style="grid-column: 1 / -1;">
+        <label data-i18n="labelSelectCat">کیٹگری منتخب کریں:*</label>
+        <div class="custom-select-wrapper">
+          <input type="text" id="reqCategorySearch" class="custom-select-search" placeholder="کیٹگری تلاش کریں یا لسٹ سے چنیں..." autocomplete="off" onfocus="openDropdown('reqCategoryDropdown')" onkeyup="filterDropdown('reqCategorySearch', 'reqCategoryDropdown', 'reqCategory')" required data-i18n-placeholder="catSearchPlaceholder">
+          <input type="hidden" id="reqCategory" required>
+          <div id="reqCategoryDropdown" class="custom-select-dropdown"></div>
+        </div>
+      </div>
+      <div class="form-group" style="grid-column: 1 / -1;">
+        <label data-i18n="labelAddressDetails">پتہ و دیگر تفصیلات:</label>
+        <textarea id="reqMessage" class="form-input-ctrl" rows="2" placeholder="دکان کا پتہ یا فراہم کردہ خدمات درج کریں..." data-i18n-placeholder="addressPlaceholder"></textarea>
+      </div>
+      <div style="grid-column: 1 / -1; text-align: center; margin-top: 6px;">
+        <button type="submit" class="btn-submit-req">
+          <i class="fa-brands fa-whatsapp" style="font-size:1.2rem;"></i> <span data-i18n="btnSendWa">واٹس ایپ پر درخواست بھیجیں</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Mobile Bottom Nav -->
+  <div class="mobile-bottom-bar">
+    <div class="bottom-tab-item active" id="bTabDir" onclick="switchMainTab('dir')"><i class="fa-solid fa-building-user"></i><span data-i18n="bTabDir">ڈائریکٹری</span></div>
+    <div class="bottom-tab-item" id="bTabNews" onclick="switchMainTab('news')"><i class="fa-solid fa-newspaper"></i><span data-i18n="bTabNews">خبریں</span></div>
+    <div class="bottom-tab-item" id="bTabTrans" onclick="switchMainTab('transport')"><i class="fa-solid fa-train"></i><span data-i18n="bTabTrans">ٹرینیں</span></div>
+    <div class="bottom-tab-item" id="bTabJobs" onclick="switchMainTab('jobs')"><i class="fa-solid fa-briefcase"></i><span data-i18n="bTabJobs">نوکریاں</span></div>
+    <div class="bottom-tab-item" onclick="switchMainTab('favs')"><i class="fa-solid fa-heart"></i><span>پسندیدہ</span></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3 data-i18n="footerCol1Title">وزیرآباد سٹی اپڈیٹ پورٹل</h3>
+        <p style="font-size:0.86rem; color:#cbd5e1; line-height:1.7;" data-i18n="footerCol1Desc">وزیرآباد کا واحد اپڈیٹڈ ڈیجیٹل پورٹل جس میں تمام کاروباری ڈائریکٹری، خبریں اور روزگار دستیاب ہیں۔</p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footerCol2Title">🕌 نماز کے اوقات (وزیرآباد)</h3>
+        <div style="background:rgba(255,255,255,0.04); padding:12px; border-radius:12px; font-size:0.85rem; line-height:1.8;">
+          <span data-i18n="prayerTimes">فجر: 04:40 | ظہر: 01:15 | عصر: 04:30<br>مغرب: 06:10 | عشاء: 07:45</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footerCol3Title">📊 پورٹل اینالیٹکس</h3>
+        <div style="background:rgba(255,255,255,0.04); padding:12px; border-radius:12px; font-size:0.85rem; line-height:1.8;">
+          <div><span data-i18n="todayVisits">👥 آج کے وزٹرز:</span> <strong style="color:#38bdf8;" id="todayVisitsCount">1</strong></div>
+          <div><span data-i18n="totalVisits">📈 کل وزٹرز:</span> <strong style="color:var(--accent-amber);" id="totalVisitsCount">1</strong></div>
+          <div><span data-i18n="locationText">📍 مقام:</span> <strong style="color:var(--accent-emerald);">وزیرآباد، پاکستان</strong></div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footerCol4Title">💬 رائے کا اظہار کریں</h3>
+        <form onsubmit="sendFeedback(event)">
+          <textarea id="feedbackText" class="form-input-ctrl" rows="2" required placeholder="اپنی رائے لکھیں..." style="margin-bottom:6px; background:rgba(255,255,255,0.05); color:#fff; border-color:rgba(255,255,255,0.15);" data-i18n-placeholder="feedbackPlaceholder"></textarea>
+          <button type="submit" style="background:#0284c7; color:#fff; border:none; padding:8px; border-radius:8px; font-weight:800; cursor:pointer; width:100%;" data-i18n="btnSend">بھیجیں</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- 🟢 Secret Trigger: Triple click here to open Admin panel -->
+    <div style="text-align:center; padding-top:20px; font-size:0.8rem; color:#94a3b8; cursor:pointer;" id="secretAdminTrigger" title="ایڈمن لاگ ان کے لیے یہاں 3 بار کلک کریں" data-i18n="footerCopy">
+      &copy; 2026 <strong>وزیرآباد سٹی اپڈیٹ پورٹل</strong> - تمام حقوق محفوظ ہیں۔
+    </div>
+  </footer>
+
+  <!-- Admin Modal -->
+  <div class="modal-overlay" id="adminModal">
+    <div class="modal-content">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="font-weight:800; color:#0284c7;" data-i18n="adminPanelTitle">🛠️ ایڈمن کنٹرول پینل (پوسٹنگ)</h3>
+        <span style="cursor: pointer; font-size: 1.5rem; font-weight:bold;" onclick="closeAdminModal()">&times;</span>
+      </div>
+
+      <div style="display: flex; gap: 6px; margin-bottom: 16px; flex-wrap: wrap;">
+        <button type="button" class="card-btn btn-call" style="flex:1; font-size:0.75rem;" onclick="showAdminForm('dir')">+ ڈائریکٹری</button>
+        <button type="button" class="card-btn" style="background:var(--accent-rose); flex:1; font-size:0.75rem;" onclick="showAdminForm('news')">+ خبر</button>
+        <button type="button" class="card-btn" style="background:var(--accent-emerald); flex:1; font-size:0.75rem;" onclick="showAdminForm('jobs')">+ نوکری</button>
+        <button type="button" class="card-btn" style="background:var(--accent-amber); color:#000; flex:1; font-size:0.75rem;" onclick="showAdminForm('classifieds')">+ اشتہار</button>
+        <button type="button" class="card-btn btn-wa" style="flex:1; font-size:0.75rem;" onclick="showAdminForm('ad')">🖼️ بینر/لوگو</button>
+      </div>
+
+      <!-- Form 1: Directory -->
+      <form id="addListingForm" onsubmit="handleDirectorySubmit(event)">
+        <input type="hidden" id="editDirId" value="">
+        <h4 style="margin-bottom: 10px; color: #0284c7;" id="dirFormHeading">1. نیا کاروبار شامل کریں:</h4>
+        <div class="form-group"><label>نام / ادارہ:*</label><input type="text" id="inputTitle" class="form-input-ctrl" required placeholder="چوہدری کٹلری"></div>
+        <div class="form-group"><label>مالک کا نام:</label><input type="text" id="inputPerson" class="form-input-ctrl" placeholder="چوہدری احمد"></div>
+        
+        <div class="form-group">
+          <label>کیٹگری:*</label>
+          <div class="custom-select-wrapper">
+            <input type="text" id="adminCategorySearch" class="custom-select-search" placeholder="کیٹگری تلاش کریں..." autocomplete="off" onfocus="openDropdown('adminCategoryDropdown')" onkeyup="filterDropdown('adminCategorySearch', 'adminCategoryDropdown', 'inputCategory')" required>
+            <input type="hidden" id="inputCategory" required>
+            <div id="adminCategoryDropdown" class="custom-select-dropdown"></div>
+          </div>
+        </div>
+
+        <div class="form-group"><label>فون نمبر:*</label><input type="text" id="inputPhone" class="form-input-ctrl" required placeholder="03483439886"></div>
+        <div class="form-group"><label>پتہ:*</label><input type="text" id="inputAddress" class="form-input-ctrl" required placeholder="نظام آباد، وزیرآباد"></div>
+        <div class="form-group">
+          <label>تصویر / لوگو:</label>
+          <input type="file" class="form-input-ctrl" accept="image/*" onchange="compressAndPreviewImage(event, 'dir')">
+          <div id="dirImagePreviewBox" style="margin-top: 5px; display: none;"><img id="dirImagePreviewTag" src="" style="max-height: 80px; border-radius: 8px;"></div>
+        </div>
+        <div class="form-group"><label><input type="checkbox" id="inputVerified"> تصدیق شدہ بیج لگائیں</label></div>
+        <button type="submit" class="card-btn btn-call" style="width:100%; margin-top:10px;" id="dirSubmitBtn">محفوظ کریں</button>
+      </form>
+
+      <!-- Form 2: News -->
+      <form id="addNewsForm" onsubmit="handleNewsSubmit(event)" style="display: none;">
+        <input type="hidden" id="editNewsId" value="">
+        <h4 style="margin-bottom: 10px; color: var(--accent-rose);" id="newsFormHeading">2. تازہ خبر شائع کریں:</h4>
+        <div class="form-group"><label>سرخی (Headline):*</label><input type="text" id="newsTitle" class="form-input-ctrl" required></div>
+        <div class="form-group">
+          <label>تصویر:</label>
+          <input type="file" class="form-input-ctrl" accept="image/*" onchange="compressAndPreviewImage(event, 'news')">
+          <div id="imagePreviewBox" style="margin-top: 5px; display: none;"><img id="imagePreviewTag" src="" style="max-height: 80px; border-radius: 8px;"></div>
+        </div>
+        <div class="form-group"><label>تفصیل:*</label><textarea id="newsDetail" class="form-input-ctrl" rows="3" required></textarea></div>
+        <div class="form-group"><label>رپورٹر کا نام:</label><input type="text" id="newsReporter" class="form-input-ctrl" placeholder="سٹی رپورٹر"></div>
+        <button type="submit" class="card-btn" style="background:var(--accent-rose); width:100%; margin-top:10px;" id="newsSubmitBtn">خبر شائع کریں</button>
+      </form>
+
+      <!-- Form 3: Job -->
+      <form id="addJobForm" onsubmit="handleJobSubmit(event)" style="display: none;">
+        <input type="hidden" id="editJobId" value="">
+        <h4 style="margin-bottom: 10px; color: var(--accent-emerald);" id="jobFormHeading">3. نئی نوکری پوسٹ کریں:</h4>
+        <div class="form-group"><label>عہدہ / نوکری:*</label><input type="text" id="jobTitle" class="form-input-ctrl" required placeholder="سیلز مین"></div>
+        <div class="form-group"><label>ادارہ / دکان:*</label><input type="text" id="jobCompany" class="form-input-ctrl" required placeholder="الرحمان مارکیٹنگ"></div>
+        <div class="form-group"><label>تنخواہ:</label><input type="text" id="jobSalary" class="form-input-ctrl" placeholder="30,000 روپے"></div>
+        <div class="form-group"><label>رابطہ نمبر:*</label><input type="text" id="jobPhone" class="form-input-ctrl" required placeholder="03483439886"></div>
+        <div class="form-group"><label>مقام:*</label><input type="text" id="jobLocation" class="form-input-ctrl" required placeholder="وزیرآباد"></div>
+        <div class="form-group"><label>تفصیل:</label><textarea id="jobDetail" class="form-input-ctrl" rows="2"></textarea></div>
+        <button type="submit" class="card-btn" style="background:var(--accent-emerald); width:100%; margin-top:10px;" id="jobSubmitBtn">نوکری لگائیں</button>
+      </form>
+
+      <!-- Form 4: Classifieds -->
+      <form id="addClassifiedForm" onsubmit="handleClassifiedSubmit(event)" style="display: none;">
+        <input type="hidden" id="editClassId" value="">
+        <h4 style="margin-bottom: 10px; color: var(--accent-amber);" id="classFormHeading">4. خرید و فروخت / پراپرٹی:</h4>
+        <div class="form-group"><label>عنوان:*</label><input type="text" id="classTitle" class="form-input-ctrl" required placeholder="5 مرلہ مکان"></div>
+        <div class="form-group"><label>کیٹگری:*</label>
+          <select id="classCat" class="form-input-ctrl" required>
+            <option value="پراپرٹی و مکانات">پراپرٹی و مکانات</option>
+            <option value="گاڑیاں و موٹر سائیکل">گاڑیاں و موٹر سائیکل</option>
+            <option value="موبایل و الیکٹرانکس">موبایل و الیکٹرانکس</option>
+            <option value="دیگر متفرق اشیاء">دیگر متفرق اشیاء</option>
+          </select>
+        </div>
+        <div class="form-group"><label>قیمت (Demand):*</label><input type="text" id="classPrice" class="form-input-ctrl" required placeholder="50,000 روپے"></div>
+        <div class="form-group"><label>فون نمبر:*</label><input type="text" id="classPhone" class="form-input-ctrl" required placeholder="03483439886"></div>
+        <div class="form-group">
+          <label>تصویر:</label>
+          <input type="file" class="form-input-ctrl" accept="image/*" onchange="compressAndPreviewImage(event, 'classified')">
+          <div id="classImagePreviewBox" style="margin-top: 5px; display: none;"><img id="classImagePreviewTag" src="" style="max-height: 80px; border-radius: 8px;"></div>
+        </div>
+        <div class="form-group"><label>تفصیل:</label><textarea id="classDetail" class="form-input-ctrl" rows="2"></textarea></div>
+        <button type="submit" class="card-btn" style="background:var(--accent-amber); color:#000; width:100%; margin-top:10px;" id="classSubmitBtn">اشتہار شائع کریں</button>
+      </form>
+
+      <!-- Form 5: Logo & Commercial Ad Settings -->
+      <form id="addAdForm" onsubmit="handleAdSubmit(event)" style="display: none;">
+        <h4 style="margin-bottom: 10px; color: var(--whatsapp-color);">5. لوگو اور کمرشل بینر پوسٹ کریں:</h4>
+        <div class="form-group">
+          <label>🖼️ پورٹل کا بڑا لوگو اپڈیٹ کریں:</label>
+          <input type="file" class="form-input-ctrl" accept="image/*" onchange="compressAndPreviewImage(event, 'logo')">
+          <div id="logoPreviewBox" style="margin-top: 5px; display: none;"><img id="logoPreviewTag" src="" style="max-height: 80px; border-radius: 50%;"></div>
+        </div>
+        <div class="form-group" style="margin-top: 15px;">
+          <label>📢 کمرشل بینر فوٹو اپڈیٹ کریں:</label>
+          <input type="file" class="form-input-ctrl" accept="image/*" onchange="compressAndPreviewImage(event, 'commercial')">
+          <div id="commercialPreviewBox" style="margin-top: 5px; display: none;"><img id="commercialPreviewTag" src="" style="max-height: 100px; border-radius: 8px; width:100%; object-fit:cover;"></div>
+        </div>
+        <button type="submit" class="card-btn btn-wa" style="width:100%; margin-top:15px;"><i class="fa-solid fa-upload"></i> بینر پوسٹ / محفوظ کریں</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const ADMIN_PIN = "034834"; 
+    let isAdminLoggedIn = false;
+    let base64ImageTemp = "", base64DirImageTemp = "", base64ClassImageTemp = "", base64LogoTemp = "", base64CommercialTemp = "";
+    let deferredPrompt;
+    let currentLang = 'ur';
+
+    const translations = {
+      ur: {
+        siteTitle: "وزیرآباد سٹی اپڈیٹ پورٹل",
+        siteSubtitle: "بزنس ڈائریکٹری، ڈیلی نیوز، نوکریاں اور ٹرین ٹائم ٹیبل",
+        installApp: "ایپ انسٹال کریں",
+        whatsappDesk: "واٹس ایپ ڈیسک",
+        nextPrayer: "اگلی نماز: ظہر (01:15)",
+        breakingNews: "اہم خبریں",
+        searchPlaceholder: "تلاش کریں یا بولنے کے لیے مائیک پر کلک کریں...",
+        tabDir: "🏢 ڈائریکٹری",
+        tabNews: "📰 تاز ترین خبریں",
+        tabTrans: "🚆 ٹرین ٹائم ٹیبل",
+        tabJobs: "💼 نوکریاں (Jobs)",
+        tabClass: "🏡 خرید و فروخت",
+        tabFavs: "❤️ پسندیدہ",
+        marketRatesTitle: "وزیرآباد ڈیلی نرخ:",
+        rate1: "🐔 مرغی (زندہ):",
+        rate2: "🥚 انڈے (درجن):",
+        rate3: "🌾 آٹا (20kg):",
+        rate4: "🔥 LPG گیس:",
+        rate5: "👑 سونا (24k):",
+        sponsoredTag: "اسپانسرڈ اشتہار",
+        adText: "📢 اپنا کاروبار یا نوکری کا اشتہار پورٹل پر نمایاں دکھانے کے لیے واٹس ایپ کریں:",
+        sidebarTitle: "شہر کی تمام کیٹگریز",
+        allCats: "تمام کیٹگریز",
+        formHeading: "ڈائریکٹری میں اپنا کاروبار شامل کروائیں",
+        formDesc: "اپنا نام یا دکان پورٹل میں درج کروانے کے لیے فارم پُر کریں۔ معلومات فوراً ہمارے واٹس ایپ پر موصول ہو جائیں گی۔",
+        labelBizName: "کاروبار / دکان کا نام:*",
+        labelOwnerPhone: "مالک کا نام / فون نمبر:*",
+        labelSelectCat: "کیٹگری منتخب کریں:*",
+        catSearchPlaceholder: "کیٹگری تلاش کریں یا لسٹ سے چنیں...",
+        labelAddressDetails: "پتہ و دیگر تفصیلات:",
+        addressPlaceholder: "دکان کا پتہ یا فراہم کردہ خدمات درج کریں...",
+        btnSendWa: "واٹس ایپ پر درخواست بھیجیں",
+        bTabDir: "ڈائریکٹری",
+        bTabNews: "خبریں",
+        bTabTrans: "ٹرینیں",
+        bTabJobs: "نوکریاں",
+        footerCol1Title: "وزیرآباد سٹی اپڈیٹ پورٹل",
+        footerCol1Desc: "وزیرآباد کا واحد اپڈیٹڈ ڈیجیٹل پورٹل جس میں تمام کاروباری ڈائریکٹری، خبریں اور روزگار دستیاب ہیں۔",
+        footerCol2Title: "🕌 نماز کے اوقات (وزیرآباد)",
+        prayerTimes: "فجر: 04:40 | ظہر: 01:15 | عصر: 04:30<br>مغرب: 06:10 | عشاء: 07:45",
+        footerCol3Title: "📊 پورٹل اینالیٹکس",
+        todayVisits: "👥 آج کے وزٹرز:",
+        totalVisits: "📈 کل وزٹرز:",
+        locationText: "📍 مقام:",
+        footerCol4Title: "💬 رائے کا اظہار کریں",
+        feedbackPlaceholder: "اپنی رائے لکھیں...",
+        btnSend: "بھیجیں",
+        footerCopy: "&copy; 2026 <strong>وزیرآباد سٹی اپڈیٹ پورٹل</strong> - تمام حقوق محفوظ ہیں۔",
+        adminPanelTitle: "🛠️ ایڈمن کنٹرول پینل"
+      },
+      en: {
+        siteTitle: "Wazirabad City Update Portal",
+        siteSubtitle: "Business Directory, Daily News, Jobs & Train Timetable",
+        installApp: "Install App",
+        whatsappDesk: "WhatsApp Desk",
+        nextPrayer: "Next Prayer: Zohr (01:15)",
+        breakingNews: "Breaking News",
+        searchPlaceholder: "Search or click mic to speak...",
+        tabDir: "🏢 Directory",
+        tabNews: "📰 Latest News",
+        tabTrans: "🚆 Train Schedule",
+        tabJobs: "💼 Jobs",
+        tabClass: "🏡 Classifieds",
+        tabFavs: "❤️ Favorites",
+        marketRatesTitle: "Wazirabad Daily Rates:",
+        rate1: "🐔 Chicken (Live):",
+        rate2: "🥚 Eggs (Dozen):",
+        rate3: "🌾 Flour (20kg):",
+        rate4: "🔥 LPG Gas:",
+        rate5: "👑 Gold (24k):",
+        sponsoredTag: "Sponsored Ad",
+        adText: "📢 To feature your business or job ad on the portal, WhatsApp:",
+        sidebarTitle: "All City Categories",
+        allCats: "All Categories",
+        formHeading: "Add Your Business to Directory",
+        formDesc: "Fill out the form to list your name or shop. Information will be sent directly to our WhatsApp.",
+        labelBizName: "Business / Shop Name:*",
+        labelOwnerPhone: "Owner Name / Phone Number:*",
+        labelSelectCat: "Select Category:*",
+        catSearchPlaceholder: "Search category or select from list...",
+        labelAddressDetails: "Address & Details:",
+        addressPlaceholder: "Enter shop address or services provided...",
+        btnSendWa: "Send Request via WhatsApp",
+        bTabDir: "Directory",
+        bTabNews: "News",
+        bTabTrans: "Trains",
+        bTabJobs: "Jobs",
+        footerCol1Title: "Wazirabad City Update Portal",
+        footerCol1Desc: "Wazirabad's sole updated digital portal providing business directory, news, and employment listings.",
+        footerCol2Title: "🕌 Prayer Times (Wazirabad)",
+        prayerTimes: "Fajr: 04:40 | Zohr: 01:15 | Asr: 04:30<br>Maghrib: 06:10 | Isha: 07:45",
+        footerCol3Title: "📊 Portal Analytics",
+        todayVisits: "👥 Today's Visits:",
+        totalVisits: "📈 Total Visits:",
+        locationText: "📍 Location:",
+        footerCol4Title: "💬 Send Feedback",
+        feedbackPlaceholder: "Write your feedback...",
+        btnSend: "Send",
+        footerCopy: "&copy; 2026 <strong>Wazirabad City Update Portal</strong> - All Rights Reserved.",
+        adminPanelTitle: "🛠 Admin Control Panel"
+      }
+    };
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'ur' ? 'en' : 'ur';
+      const htmlRoot = document.getElementById('htmlRoot');
+      const langBtnText = document.getElementById('langBtnText');
+
+      if (currentLang === 'en') {
+        htmlRoot.setAttribute('lang', 'en');
+        htmlRoot.setAttribute('dir', 'ltr');
+        langBtnText.innerText = "اردو";
+      } else {
+        htmlRoot.setAttribute('lang', 'ur');
+        htmlRoot.setAttribute('dir', 'rtl');
+        langBtnText.innerText = "English";
+      }
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          el.innerHTML = translations[currentLang][key];
+        }
+      });
+
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        if (translations[currentLang][key]) {
+          el.placeholder = translations[currentLang][key];
+        }
+      });
+    }
+
+    window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; });
+    function installPWA() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then((res) => { if(res.outcome === 'accepted') alert('Portal App is installing!'); deferredPrompt = null; });
+      } else { alert('Click "Add to Home Screen" from your browser menu.'); }
+    }
+
+    function startVoiceSearch() {
+      if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        alert('Voice search is not supported by your browser.');
+        return;
+      }
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      const recognition = new SpeechRecognition();
+      recognition.lang = currentLang === 'ur' ? 'ur-PK' : 'en-US';
+      recognition.interimResults = false;
+
+      const micBtn = document.getElementById('voiceSearchBtn');
+      micBtn.classList.add('listening');
+      recognition.start();
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        document.getElementById('searchInput').value = transcript;
+        filterContent();
+        micBtn.classList.remove('listening');
+      };
+      recognition.onerror = () => { micBtn.classList.remove('listening'); };
+      recognition.onend = () => { micBtn.classList.remove('listening'); };
+    }
+
+    function updateLiveClock() {
+      const topClock = document.getElementById('liveClockDisplay');
+      const now = new Date();
+      const daysUrdu = ['اتوار', 'پیر', 'منگل', 'بدھ', 'جمعرات', 'جمعہ', 'ہفتہ'];
+      const monthsUrdu = ['جنوری', 'فروری', 'مارچ', 'اپریل', 'مئی', 'جون', 'جولائی', 'اگست', 'ستمبر', 'اکتوبر', 'نومبر', 'دسمبر'];
+      const daysEng = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      const monthsEng = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+      let dateStr = currentLang === 'ur' ? `${daysUrdu[now.getDay()]}، ${now.getDate()} ${monthsUrdu[now.getMonth()]}` : `${daysEng[now.getDay()]}, ${monthsEng[now.getMonth()]} ${now.getDate()}`;
+      let hours = now.getHours();
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const ampm = hours >= 12 ? (currentLang === 'ur' ? 'شام' : 'PM') : (currentLang === 'ur' ? 'صبح' : 'AM');
+      hours = hours % 12 || 12;
+
+      if(topClock) topClock.innerHTML = `<i class="fa-solid fa-clock"></i> ${dateStr} | ${hours}:${minutes} ${ampm}`;
+    }
+    setInterval(updateLiveClock, 1000);
+
+    async function fetchWazirabadWeather() {
+      try {
+        const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=32.4431&longitude=74.1221&current_weather=true');
+        const data = await res.json();
+        const cityLabel = currentLang === 'ur' ? 'وزیرآباد' : 'Wazirabad';
+        document.getElementById('weatherDisplay').innerHTML = `<i class="fa-solid fa-cloud-sun"></i> ${cityLabel}: ${Math.round(data.current_weather.temperature)}°C 🌤️️`;
+      } catch (e) {}
+    }
+
+    function trackVisitorStats() {
+      let todayCount = parseInt(localStorage.getItem('wzb_today_visits') || '45');
+      let totalCount = parseInt(localStorage.getItem('wzb_total_visits') || '560');
+      document.getElementById('todayVisitsCount').innerText = todayCount + 1;
+      document.getElementById('totalVisitsCount').innerText = totalCount + 1;
+      localStorage.setItem('wzb_today_visits', todayCount + 1);
+      localStorage.setItem('wzb_total_visits', totalCount + 1);
+    }
+
+    const categories = [
+      "صحافی و اینکرز (Media & Press)", "چھری کانٹا ساز (Cutlery Industry)", "سرجیکل آلات (Surgical Instruments)", 
+      "کچن ویئر و برتن مینوفیکچرر", "رائس ملز و چاول ایکسپورٹرز", "ہسپتال و میڈیکل سینٹر", "ڈاکٹرز و اسپیشلسٹ کلینک", 
+      "فارمیسی و میڈیکل اسٹور", "لیبارٹریز و تشخیص", "وکلائے قانون و لیگل ایڈوائزر", "پرائیویٹ سکولز و اکیڈمیز", 
+      "کالجز و یونیورسٹیز", "دینی مدارس و مساجد", "جیولرز و گولڈ مارکیٹ", "کپڑے و گارمنٹس بوٹیک", 
+      "جوتے و لیدر مصنوعات", "پراپرٹی ڈیلرز و رئیل اسٹیٹ", "تعمیراتی مٹیریل و سیمنٹ", "آرکیٹیکٹ و میپ ڈیزائنرز", 
+      "الیکٹرانکس و ہوم اپلائنسز", "موبایل و لیپ ٹاپ شاپس", "فرنیچر و ووڈ ورک", "کار و بائیک شو رومز", 
+      "آٹو ورکشاپس و ڈینٹنگ", "سپیئر پارٹس ڈیلرز", "ریسٹورنٹس و فاسٹ فوڈ", "نان بائی، مٹھائی و بیکری", 
+      "پلمبنگ و سینیٹری سٹور", "الیکٹریشن و الیکٹرک وائرنگ", "سولر سسٹمز و انورٹر", "پینٹ و ہارڈ ویئر سٹور", 
+      "بیوٹی پارلرز و لیڈیز سلون", "مردانہ سلون و باربر", "جم و فٹنس سینٹرز", "فوٹوگرافی و ویڈیو اسٹوڈیو", 
+      "ٹیلرنگ و ڈیزائننگ بوٹیک", "ٹرانسپورٹ و گڈز فارورڈنگ", "ٹیکسی، رکشہ و رینٹ اے کار", "کیبل ٹی وی و فائبر انٹرنیٹ", 
+      "سیکیورٹی کیمرے (CCTV)", "اسٹیل فیبریکیشن و ویلڈنگ", "فلور ملز و آٹا چکی", "پرنٹنگ پریس و فلیکس", 
+      "کورئیر و ڈلیوری سروسز", "ایونٹ مینجمنٹ و میرج ہال", "کیٹرنگ و دیگ سروس", "این جی اوز و ویلفیئر سوسائٹی", 
+      "سرکاری دفاتر و ہیلپ لائن", "ریسکیو 1122 و ایمبولینس", "پولیس اسٹیشن و تھانہ جات", "بجلی و گیس دفاتر", 
+      "ڈرائیونگ سکولز", "ٹریول ایجنسی و حج عمرہ سروس", "سیکیورٹی گارڈز ایجنسی", "واٹر فلٹریشن و منرل واٹر", 
+      "پیٹ شاپ و ویٹرنری کلینک", "ڈرائی کلینر و لانڈری", "بوائلر و ہیوی انڈسٹری", "ایل پی جی گیس سلنڈر", 
+      "سیکنڈ ہینڈ سامان و کباڑ", "ڈیجیٹل مارکیٹنگ و آئی ٹی", "گرافک ڈیزائنرز و ویب ڈیولپر", "پھل و سبزی منڈی ایجنٹ", 
+      "ہول سیل گروسری و سپرمارٹ", "آئس فیکٹری و کولڈ اسٹوریج", "ایلومینیم و گلاس ورک", "پلاسٹک و پیکیجنگ انڈسٹری", 
+      "آٹو الیکٹریشن و اے سی", "جنریٹر و یو پی ایس سیلز", "کار واش و سروس اسٹیشن", "ہوم ٹیوشن و آن لائن اکیڈمی", 
+      "بک شاپ و اسٹیشنری", "ماربل و ٹائلز شو روم", "کراکری و کرائے کے برتن", "فلاور شاپ و ڈیکورেশন", 
+      "دودھ، دہی و ڈیرھی فارم", "مرغی و گوشت مارکیٹ", "مچھلی فروش (Fish Corner)", "کھاد و بیج ایجنسی", 
+      "زرعی مشینری و ٹریکٹر", "خالص شہد و دیسی جڑی بوٹیاں", "ہومیوپیتھک کلینک", "حکمت و یونانی دواخانے", 
+      "اپٹیکل و نظر کے چشمے", "آڈیو سسٹمز و ساؤنڈ سروس", "کینٹین و کولڈ ڈرنکس ایجنسی", "ڈرائی فروٹ و پنسار اسٹور", 
+      "فلورنگ و وال پیپر ڈیکور", "واٹر پمپ و بورنگ سروس", "کارپٹ و قالین شو روم", "ہینڈ کرافٹ و گفٹ شاپس", 
+      "بیگز و سوٹ کیس اسٹور", "ڈسپوزایبل آئٹمز و پیکیجنگ", "سوئمنگ پول و اسپورٹس کلب", "اسپورٹس سامان و ٹرافی", 
+      "بیبی کیئر و کھلونے", "واچ ہاؤس و گھڑیاں", "سولر واٹر ہیٹر و گیزر", "لیبر و مستری کانٹریکٹرز", 
+      "ڈینٹل کلینک و دانتوں کے سرجن", "فزیوتھراپی سینٹر", "آئی کلینک و آنکھوں کے ماہر", "بلڈ بینک و بلڈ ڈونر سوسائٹی", 
+      "ایکسرے، الٹراساؤنڈ و سی ٹی اسکین", "ایمرجنسی فارمیسی 24 گھنٹے", "سی این جی و پیٹرول پمپ", "ٹائر شاپ و پنکچر شاپ", 
+      "موٹر سائیکل ورکشاپ", "ٹیریکٹر ڈینٹنگ و مرمت", "ہائیڈرولک و ہیوی مشینری", "بیٹری سیلز و چارجنگ", 
+      "کمپیوٹر و پرنٹر ریپیئرنگ", "سی سی ٹی وی انسٹالیشن و سروس", "موبایل فون ریپیئرنگ", "ہوم اپلائنسز مرمت (فرج/اے سی)", 
+      "واشنگ مشین و مائیکروویو ریپیئر", "ایل ای ڈی ٹی وی و الیکٹرانکس ریپیئر", "سیورج و ڈرینج سروس", "پیسٹ کنٹرول و کیڑا مار اسپرے", 
+      "ہاؤس کلیننگ و واشنگ سروس", "واٹر ٹینک کلیننگ", "گارڈننگ و نرسری فارم", "اسٹیل الماری و ٹرنک میکنگ", 
+      "آئرن ڈور و گرل فیبریکیشن", "شیڈز و فائبر شیٹ ورک", "چھت واٹر پروفنگ و لیکیج", "فال سیلنگ و جپسم بورڈ", 
+      "ووڈ پالش و فرنیچر پینٹ", "برائیڈل میک اپ و اسٹوڈیو", "مہندی آرٹسٹ و ڈریس ڈیزائنر", "اینٹیں و بھٹہ خشت", 
+      "ریت، بجری و کرش سپلائر", "ماربل کٹنگ و پالش سروس", "سینٹری ویئر و ہائیڈرولک پمپ", "سول انڈر گراؤنڈ بورنگ", 
+      "فاسٹ فوڈ و برگر پوائنٹ", "پیزا و اطالوی ڈشز", "باربی کیو و تکہ کباب", "چائنیز ریسٹورنٹ", 
+      "روایتی کڑاہی و دیسی کھانا", "آئس کریم و جوس بار", "قاہوہ و چائے خانے (ٹی اسٹال)", "مصالحہ جات و چٹنی تیار کنندہ", 
+      "آچار و مربہ جات", "بیکری و کیک ڈیزائنرز", "زراعت و باغبانی ادویات", "مویشی منڈی و لائیو اسٹاک", 
+      "اینمل فیڈ و ونڈا پروڈکٹس", "کولڈ ڈرنک و منرل واٹر ڈسٹری بیوٹر", "دیگر متفرق و عام خدمات",
+      "کارپوریٹ آفس و فنانس", "بیمہ کمپنیاں (Insurance)", "سفاری و ٹور آپریٹرز", "کمرشل فوٹوگرافر",
+      "گلاس ہاؤس و شیشہ کٹنگ", "پلاستک دانہ فیکٹری", "پاور پریس ورکشاپ", "بگ بریکر و لیتھ مشین",
+      "پینٹ و ہارڈ ویئر ہول سیل", "کیمیکل سپلائرز", "سٹی کوریئر برانچ", "اے ٹی ایم و بینکنگ سروس",
+      "صرافہ بازار یونین", "پبلک لائبریری و سٹڈی ہال", "پالتو پرندوں کی مارکیٹ", "ماڈل فارم ہاؤس",
+      "پینٹنگ اینڈ ڈیکورেশন", "ایلومینیم سیکشن شاپ", "رننگ اسپورٹس گراؤنڈ", "سٹی پارک و تفریحی مقام"
+    ];
+
+    const trainSchedules = [
+      { name: "خیبر میل (3 Up / 4 Down)", route: "کراچی تا پشاور براستہ وزیرآباد", arrival: "02:30 PM", departure: "02:35 PM" },
+      { name: "تیزگام (7 Up / 8 Down)", route: "کراچی تا راولپنڈی براستہ وزیرآباد", arrival: "06:15 PM", departure: "06:20 PM" },
+      { name: "عوام ایکسپریس (13 Up / 14 Down)", route: "پشاور تا کراچی براستہ وزیرآباد", arrival: "11:10 AM", departure: "11:15 AM" },
+      { name: "سبک خرام (103 Up / 104 Down)", route: "لاہور تا راولپنڈی", arrival: "08:40 AM", departure: "08:43 AM" },
+      { name: "پاکستان ایکسپریس (45 Up / 46 Down)", route: "کراچی تا راولپنڈی", arrival: "09:50 PM", departure: "09:55 PM" }
+    ];
+
+    let currentMainTab = 'dir';
+    let currentCategory = 'all';
+    let allListings = JSON.parse(localStorage.getItem('wzb_dir_100')) || [{ id: 1, title: "وزیرآباد اپڈیٹ پورٹل آفس", person: "چیف ایڈیٹر", category: "صحافی و اینکرز (Media & Press)", phone: "03483439886", address: "پریس کلب روڈ، وزیرآباد", verified: true, image: "" }];
+    let allNews = JSON.parse(localStorage.getItem('wzb_news_100')) || [{ id: 101, title: "وزیرآباد پورٹل پر جدید اردو فونٹس اور منڈی ریٹس فعال", detail: "پورٹل پر اب جدید ترین ریڈنگ فونٹ کے ساتھ روزانہ منڈی نرخ اور وائس سرچ کا ہینڈلی فیچر بھی شامل کر دیا گیا ہے۔", reporter: "ایڈیٹوریل ٹیم", datetime: new Date().toLocaleDateString('ur-PK'), image: "" }];
+    let allJobs = JSON.parse(localStorage.getItem('wzb_jobs_100')) || [{ id: 201, title: "ضرورت برائے سیلز ایکسیکٹو", company: "الرحمان کٹلری مینوفیکچرر", salary: "30,000 روپے", phone: "03483439886", location: "جی ٹی روڈ، وزیرآباد", detail: "مارکیٹنگ کے شعبے کے لیے تجربہ کار افراد کی ضرورت ہے۔" }];
+    let allClassifieds = JSON.parse(localStorage.getItem('wzb_classifieds_100')) || [{ id: 301, title: "5 مرلہ مکان برائے فروخت", category: "پراپرٹی و مکانات", price: "60 لاکھ روپے", phone: "03483439886", detail: "نظام آباد میں بہترین لوکیشن پر گھر۔", image: "" }];
+    let savedFavorites = JSON.parse(localStorage.getItem('wzb_user_favs')) || [];
+    let savedLogo = localStorage.getItem('wzb_site_logo') || "";
+    let savedCommercialAd = localStorage.getItem('wzb_commercial_ad') || "";
+
+    let clickCount = 0;
+    let clickTimer = null;
+    document.getElementById('secretAdminTrigger').addEventListener('click', function() {
+      clickCount++;
+      if (clickTimer) clearTimeout(clickTimer);
+      clickTimer = setTimeout(() => { clickCount = 0; }, 600);
+
+      if (clickCount >= 3) {
+        clickCount = 0;
+        authAdmin();
+      }
+    });
+
+    function initCategories() {
+      const catUl = document.getElementById('categoryList');
+      const pillsBar = document.getElementById('categoryPillsBar');
+      const allCatText = currentLang === 'ur' ? 'تمام کیٹگریز' : 'All Categories';
+
+      if(catUl) catUl.innerHTML = `<li class="cat-list-item active" onclick="filterByCategory('all', this)">${allCatText}</li>`;
+      if(pillsBar) pillsBar.innerHTML = `<div class="cat-chip active" onclick="filterByCategory('all', this)">${allCatText}</div>`;
+
+      categories.forEach(cat => {
+        if(catUl) {
+          const li = document.createElement('li');
+          li.className = 'cat-list-item'; li.innerText = cat;
+          li.onclick = function() { filterByCategory(cat, this); };
+          catUl.appendChild(li);
+        }
+        if(pillsBar) {
+          const chip = document.createElement('div');
+          chip.className = 'cat-chip'; chip.innerText = cat;
+          chip.onclick = function() { filterByCategory(cat, this); };
+          pillsBar.appendChild(chip);
+        }
+      });
+
+      renderDropdownList(categories, 'reqCategoryDropdown', 'reqCategorySearch', 'reqCategory');
+      renderDropdownList(categories, 'adminCategoryDropdown', 'adminCategorySearch', 'inputCategory');
+
+      const totalCatCountEl = document.getElementById('totalCatCount');
+      if(totalCatCountEl) totalCatCountEl.innerText = categories.length;
+      updateFavBadge();
+      updateCommercialBannerDisplay();
+    }
+
+    function updateCommercialBannerDisplay() {
+      const bannerBox = document.getElementById('sponsoredBannerContent');
+      if(savedCommercialAd) {
+        bannerBox.innerHTML = `<a href="https://wa.me/923483439886?text=السلام علیکم! کمرشل اشتہار کے بارے میں معلومات چاہیے" target="_blank"><img src="${savedCommercialAd}" style="width:100%; max-height:160px; object-fit:cover; border-radius:12px; margin-top:4px;"></a>`;
+      } else {
+        bannerBox.innerHTML = `<div style="font-weight:800; font-size:0.92rem;"><span data-i18n="adText">📢 اپنا کاروبار یا نوکری کا اشتہار پورٹل پر نمایاں دکھانے کے لیے واٹس ایپ کریں:</span> <u>03483439886</u></div>`;
+      }
+    }
+
+    function renderDropdownList(list, dropdownId, searchInputId, hiddenInputId) {
+      const dropdown = document.getElementById(dropdownId);
+      if(!dropdown) return;
+      dropdown.innerHTML = '';
+      list.forEach(cat => {
+        const div = document.createElement('div');
+        div.className = 'custom-select-option';
+        div.innerText = cat;
+        div.onmousedown = function(e) {
+          e.preventDefault(); 
+          selectDropdownOption(cat, searchInputId, hiddenInputId, dropdownId);
+        };
+        dropdown.appendChild(div);
+      });
+    }
+
+    function openDropdown(dropdownId) {
+      const dropdown = document.getElementById(dropdownId);
+      if(dropdown) dropdown.style.display = 'block';
+    }
+
+    function filterDropdown(searchInputId, dropdownId, hiddenInputId) {
+      const input = document.getElementById(searchInputId);
+      const filter = input.value.toLowerCase().trim();
+      const filtered = categories.filter(c => c.toLowerCase().includes(filter));
+      renderDropdownList(filtered, dropdownId, searchInputId, hiddenInputId);
+      openDropdown(dropdownId);
+    }
+
+    function selectDropdownOption(cat, searchInputId, hiddenInputId, dropdownId) {
+      document.getElementById(searchInputId).value = cat;
+      document.getElementById(hiddenInputId).value = cat;
+      document.getElementById(dropdownId).style.display = 'none';
+    }
+
+    document.addEventListener('click', function(e) {
+      document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
+        const dropdown = wrapper.querySelector('.custom-select-dropdown');
+        if(dropdown && !wrapper.contains(e.target)) { dropdown.style.display = 'none'; }
+      });
+    });
+
+    function updateTicker() {
+      const ticker = document.getElementById('tickerContent');
+      if (ticker && allNews.length > 0) {
+        ticker.innerHTML = allNews.map(n => `🔴 ${n.title}`).join(' &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; ');
+      }
+    }
+
+    function toggleFavorite(id) {
+      const idx = savedFavorites.indexOf(id);
+      if(idx > -1) savedFavorites.splice(idx, 1);
+      else savedFavorites.push(id);
+      localStorage.setItem('wzb_user_favs', JSON.stringify(savedFavorites));
+      updateFavBadge();
+      renderContent();
+    }
+
+    function updateFavBadge() {
+      const badge = document.getElementById('favCountBadge');
+      if(badge) badge.innerText = savedFavorites.length;
+    }
+
+    function shareToWhatsApp(title, details, phone) {
+      const currentUrl = window.location.href.split('#')[0];
+      const text = `*${title}*\n${details}\n\n*رابطہ:* ${phone}\n\n🌐 *وزیرآباد سٹی اپڈیٹ پورٹل:* ${currentUrl}`;
+      window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+    }
+
+    function compressAndPreviewImage(event, type) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.createElement('canvas');
+          const MAX_WIDTH = 500;
+          const scale = MAX_WIDTH / img.width;
+          canvas.width = MAX_WIDTH;
+          canvas.height = img.height * scale;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+          const compressed = canvas.toDataURL('image/jpeg', 0.5);
+
+          if(type === 'news') { base64ImageTemp = compressed; document.getElementById('imagePreviewTag').src = compressed; document.getElementById('imagePreviewBox').style.display = 'block'; }
+          else if(type === 'dir') { base64DirImageTemp = compressed; document.getElementById('dirImagePreviewTag').src = compressed; document.getElementById('dirImagePreviewBox').style.display = 'block'; }
+          else if(type === 'classified') { base64ClassImageTemp = compressed; document.getElementById('classImagePreviewTag').src = compressed; document.getElementById('classImagePreviewBox').style.display = 'block'; }
+          else if(type === 'logo') { base64LogoTemp = compressed; document.getElementById('logoPreviewTag').src = compressed; document.getElementById('logoPreviewBox').style.display = 'block'; }
+          else if(type === 'commercial') { base64CommercialTemp = compressed; document.getElementById('commercialPreviewTag').src = compressed; document.getElementById('commercialPreviewBox').style.display = 'block'; }
+        };
+        img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function renderContent() {
+      const grid = document.getElementById('mainGrid');
+      if(!grid) return;
+      grid.innerHTML = '';
+      const searchInputEl = document.getElementById('searchInput');
+      const q = searchInputEl ? searchInputEl.value.toLowerCase().trim() : '';
+
+      function getAdminCardActions(type, id) {
+        if (!isAdminLoggedIn) return '';
+        return `
+          <div class="admin-card-actions">
+            <button class="admin-edit-btn" onclick="editItem('${type}', ${id})"><i class="fa-solid fa-pen-to-square"></i> ایڈٹ</button>
+            <button class="admin-del-btn" onclick="deleteItem('${type}', ${id})"><i class="fa-solid fa-trash"></i> حذف</button>
+          </div>
+        `;
+      }
+
+      if (currentMainTab === 'dir') {
+        document.getElementById('categoryPillsBar').style.display = 'flex';
+        const data = allListings.filter(i => {
+          const matchCat = currentCategory === 'all' || (i.category || '') === currentCategory;
+          const matchQuery = (i.title || '').toLowerCase().includes(q) || (i.person || '').toLowerCase().includes(q) || (i.address || '').toLowerCase().includes(q) || (i.phone || '').includes(q);
+          return matchCat && matchQuery;
+        });
+        
+        document.getElementById('resultsCount').innerText = currentLang === 'ur' ? `کل انٹریز: ${data.length}` : `Total Entries: ${data.length}`;
+        data.forEach(item => {
+          const isFav = savedFavorites.includes(item.id);
+          let img = item.image ? `<img src="${item.image}" style="width:100%; height:160px; object-fit:cover; border-radius:12px; margin-bottom:12px;">` : '';
+          grid.innerHTML += `
+            <div class="app-card">
+              <div>
+                ${img}
+                <div class="card-top-row">
+                  <div class="card-badge">${item.category}</div>
+                  <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite(${item.id})"><i class="fa-${isFav ? 'solid' : 'regular'} fa-heart"></i></button>
+                </div>
+                <div style="font-size:1.15rem; font-weight:800;">${item.title} ${item.verified ? '<i class="fa-solid fa-circle-check" style="color:var(--accent-emerald);"></i>' : ''}</div>
+                <div style="font-size:0.86rem; margin-top:8px; color:var(--text-muted); line-height:1.6;">
+                  <div><strong>${currentLang === 'ur' ? 'مالک' : 'Owner'}:</strong> ${item.person || 'N/A'}</div>
+                  <div><strong>${currentLang === 'ur' ? 'رابطہ' : 'Phone'}:</strong> ${item.phone}</div>
+                  <div><strong>${currentLang === 'ur' ? 'مقام' : 'Address'}:</strong> ${item.address}</div>
+                </div>
+              </div>
+              <div>
+                ${getAdminCardActions('dir', item.id)}
+                <div class="card-actions-grid">
+                  <a href="tel:${item.phone}" class="card-btn btn-call"><i class="fa-solid fa-phone"></i> ${currentLang === 'ur' ? 'کال' : 'Call'}</a>
+                  <a href="https://wa.me/${item.phone}?text=السلام%20علیکم!" target="_blank" class="card-btn btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                  <button class="card-btn btn-share" onclick="shareToWhatsApp('${item.title}', '${item.address}', '${item.phone}')"><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
+              </div>
+            </div>`;
+        });
+      } 
+      else if (currentMainTab === 'news') {
+        document.getElementById('categoryPillsBar').style.display = 'none';
+        const data = allNews.filter(n => (n.title || '').toLowerCase().includes(q) || (n.detail || '').toLowerCase().includes(q));
+        document.getElementById('resultsCount').innerText = currentLang === 'ur' ? `کل خبریں: ${data.length}` : `Total News: ${data.length}`;
+
+        data.forEach(item => {
+          let img = item.image ? `<img src="${item.image}" style="width:100%; max-height:300px; object-fit:contain; border-radius:12px; margin:12px 0; background:#000;">` : '';
+          grid.innerHTML += `
+            <div class="app-card" style="grid-column:1/-1;">
+              <div>
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                  <div style="font-size:0.8rem; color:var(--text-muted); font-weight:700;"><i class="fa-regular fa-clock"></i> ${item.datetime} | ✍️ ${item.reporter}</div>
+                  <button class="card-btn btn-share" style="padding:4px 10px; font-size:0.8rem;" onclick="shareToWhatsApp('${item.title}', '${item.detail.substring(0,60)}...', 'رپورٹر: ${item.reporter}')"><i class="fa-solid fa-share-nodes"></i> شیئر</button>
+                </div>
+                <h3 style="color:var(--accent-rose); margin:6px 0; font-size:1.25rem; font-weight:800;">${item.title}</h3>
+                ${img}
+                <p style="font-size:0.95rem; line-height:1.8; color:var(--text-main);">${item.detail}</p>
+              </div>
+              <div>
+                ${getAdminCardActions('news', item.id)}
+              </div>
+            </div>`;
+        });
+      }
+      else if (currentMainTab === 'transport') {
+        document.getElementById('categoryPillsBar').style.display = 'none';
+        document.getElementById('resultsCount').innerText = currentLang === 'ur' ? `وزیرآباد جنکشن ریلوے اسٹیشن (ٹرین ٹائم ٹیبل)` : `Wazirabad Junction Railway Station (Train Schedule)`;
+
+        let trainRows = trainSchedules.map(t => `
+          <tr>
+            <td><strong>${t.name}</strong></td>
+            <td>${t.route}</td>
+            <td style="color:var(--accent-emerald); font-weight:800;">${t.arrival}</td>
+            <td style="color:var(--accent-rose); font-weight:800;">${t.departure}</td>
+          </tr>
+        `).join('');
+
+        grid.innerHTML = `
+          <div class="app-card" style="grid-column:1/-1;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+              <h3 style="color:var(--accent-cyan); font-weight:900;"><i class="fa-solid fa-train"></i> ٹرین ٹائم ٹیبل</h3>
+              <button class="card-btn btn-share" style="padding:4px 10px; font-size:0.8rem;" onclick="shareToWhatsApp('وزیرآباد ٹرین ٹائم ٹیبل', 'تمام اپ اور ڈاؤن ٹرینوں کا شیڈول', 'وزیرآباد ریلوے اسٹیشن')"><i class="fa-solid fa-share-nodes"></i> شیئر</button>
+            </div>
+            <div style="overflow-x:auto;">
+              <table class="transport-table">
+                <thead><tr><th>ٹرین کا نام</th><th>روٹ</th><th>آمد</th><th>روانگی</th></tr></thead>
+                <tbody>${trainRows}</tbody>
+              </table>
+            </div>
+          </div>`;
+      }
+      else if (currentMainTab === 'jobs') {
+        document.getElementById('categoryPillsBar').style.display = 'none';
+        const data = allJobs.filter(j => (j.title || '').toLowerCase().includes(q) || (j.company || '').toLowerCase().includes(q));
+        document.getElementById('resultsCount').innerText = currentLang === 'ur' ? `دستیاب نوکریاں: ${data.length}` : `Available Jobs: ${data.length}`;
+
+        data.forEach(item => {
+          grid.innerHTML += `
+            <div class="app-card" style="border-top: 4px solid var(--accent-emerald);">
+              <div>
+                <div style="font-size:1.15rem; font-weight:800; color:var(--accent-emerald);">💼 ${item.title}</div>
+                <div style="font-size:0.92rem; font-weight:700; margin-top:4px;">🏢 ${item.company}</div>
+                <div style="background:rgba(16,185,129,0.12); color:var(--accent-emerald); padding:4px 12px; border-radius:10px; display:inline-block; font-size:0.85rem; font-weight:800; margin:10px 0;">💰 تنخواہ: ${item.salary || 'مفاہمت کے مطابق'}</div>
+                <div style="font-size:0.86rem; color:var(--text-muted);"><strong>📍 مقام:</strong> ${item.location}</div>
+                <p style="font-size:0.88rem; margin-top:8px;">${item.detail || ''}</p>
+              </div>
+              <div>
+                ${getAdminCardActions('job', item.id)}
+                <div class="card-actions-grid">
+                  <a href="tel:${item.phone}" class="card-btn btn-call"><i class="fa-solid fa-phone"></i> کال</a>
+                  <a href="https://wa.me/${item.phone}?text=السلام%20علیکم!" target="_blank" class="card-btn btn-wa"><i class="fa-brands fa-whatsapp"></i> Apply</a>
+                  <button class="card-btn btn-share" onclick="shareToWhatsApp('${item.title}', 'Company: ${item.company}', '${item.phone}')"><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
+              </div>
+            </div>`;
+        });
+      }
+      else if (currentMainTab === 'classifieds') {
+        document.getElementById('categoryPillsBar').style.display = 'none';
+        const data = allClassifieds.filter(c => (c.title || '').toLowerCase().includes(q));
+        document.getElementById('resultsCount').innerText = currentLang === 'ur' ? `اشتہارات: ${data.length}` : `Classifieds: ${data.length}`;
+
+        data.forEach(item => {
+          let img = item.image ? `<img src="${item.image}" style="width:100%; height:160px; object-fit:cover; border-radius:12px; margin-bottom:12px;">` : '';
+          grid.innerHTML += `
+            <div class="app-card" style="border-top: 4px solid var(--accent-amber);">
+              <div>
+                ${img}
+                <div style="font-size:1.15rem; font-weight:800; color:var(--accent-amber);">🏡 ${item.title}</div>
+                <span class="card-badge">${item.category}</span>
+                <div style="font-size:1.1rem; font-weight:800; color:var(--accent-rose); margin:8px 0;">🏷 طلب: ${item.price}</div>
+                <p style="font-size:0.88rem; color:var(--text-muted);">${item.detail || ''}</p>
+              </div>
+              <div>
+                ${getAdminCardActions('classified', item.id)}
+                <div class="card-actions-grid">
+                  <a href="tel:${item.phone}" class="card-btn btn-call"><i class="fa-solid fa-phone"></i> کال</a>
+                  <a href="https://wa.me/${item.phone}?text=السلام%20علیکم!" target="_blank" class="card-btn btn-wa"><i class="fa-brands fa-whatsapp"></i> رابطہ</a>
+                  <button class="card-btn btn-share" onclick="shareToWhatsApp('${item.title}', 'Price: ${item.price}', '${item.phone}')"><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
+              </div>
+            </div>`;
+        });
+      }
+      else if (currentMainTab === 'favs') {
+        document.getElementById('categoryPillsBar').style.display = 'none';
+        const favListings = allListings.filter(i => savedFavorites.includes(i.id));
+        document.getElementById('resultsCount').innerText = currentLang === 'ur' ? `محفوظ کردہ آئٹمز: ${favListings.length}` : `Saved Items: ${favListings.length}`;
+
+        if(favListings.length === 0) {
+          grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color:var(--text-muted); font-weight:700;">آپ نے ابھی تک کوئی انٹری پسندیدہ میں محفوظ نہیں کی۔</div>`;
+          return;
+        }
+
+        favListings.forEach(item => {
+          grid.innerHTML += `
+            <div class="app-card">
+              <div>
+                <div class="card-top-row">
+                  <div class="card-badge">${item.category}</div>
+                  <button class="fav-btn active" onclick="toggleFavorite(${item.id})"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div style="font-size:1.15rem; font-weight:800;">${item.title}</div>
+                <div style="font-size:0.86rem; color:var(--text-muted); margin-top:6px;">${item.phone} | ${item.address}</div>
+              </div>
+              <div>
+                ${getAdminCardActions('dir', item.id)}
+                <div class="card-actions-grid">
+                  <a href="tel:${item.phone}" class="card-btn btn-call"><i class="fa-solid fa-phone"></i> کال</a>
+                  <a href="https://wa.me/${item.phone}?text=السلام%20علیکم!" target="_blank" class="card-btn btn-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                  <button class="card-btn btn-share" onclick="shareToWhatsApp('${item.title}', '${item.address}', '${item.phone}')"><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
+              </div>
+            </div>`;
+        });
+      }
+    }
+
+    function switchMainTab(tab) {
+      currentMainTab = tab;
+      document.querySelectorAll('.app-tab-item, .bottom-tab-item').forEach(el => el.classList.remove('active'));
+      
+      if(tab === 'dir') { document.getElementById('tabDirBtn').classList.add('active'); document.getElementById('bTabDir').classList.add('active'); }
+      else if(tab === 'news') { document.getElementById('tabNewsBtn').classList.add('active'); document.getElementById('bTabNews').classList.add('active'); }
+      else if(tab === 'transport') { document.getElementById('tabTransportBtn').classList.add('active'); document.getElementById('bTabTrans').classList.add('active'); }
+      else if(tab === 'jobs') { document.getElementById('tabJobsBtn').classList.add('active'); document.getElementById('bTabJobs').classList.add('active'); }
+      else if(tab === 'classifieds') { document.getElementById('tabClassifiedsBtn').classList.add('active'); }
+      else if(tab === 'favs') { document.getElementById('tabFavsBtn').classList.add('active'); }
+
+      renderContent();
+    }
+
+    function filterContent() { renderContent(); }
+    
+    function filterByCategory(cat, element) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-list-item, .cat-chip').forEach(el => el.classList.remove('active'));
+      if(element) element.classList.add('active');
+      if(currentMainTab !== 'dir') switchMainTab('dir');
+      else renderContent();
+    }
+
+    function authAdmin() {
+      if(isAdminLoggedIn) { 
+        document.getElementById('adminModal').style.display = 'flex'; 
+        initCategories();
+        return; 
+      }
+      const pin = prompt("🔐 ایڈمن پاسورڈ درج کریں (Admin PIN):");
+      if (pin === ADMIN_PIN) {
+        isAdminLoggedIn = true;
+        document.getElementById('adminModal').style.display = 'flex';
+        initCategories();
+        renderContent();
+      } else if (pin !== null) { alert("❌ غلط پاسورڈ!"); }
+    }
+
+    function closeAdminModal() { document.getElementById('adminModal').style.display = 'none'; }
+
+    function showAdminForm(formType) {
+      document.getElementById('addListingForm').style.display = 'none';
+      document.getElementById('addNewsForm').style.display = 'none';
+      document.getElementById('addJobForm').style.display = 'none';
+      document.getElementById('addClassifiedForm').style.display = 'none';
+      document.getElementById('addAdForm').style.display = 'none';
+
+      if(formType === 'dir') { resetDirForm(); document.getElementById('addListingForm').style.display = 'block'; initCategories(); }
+      else if(formType === 'news') { resetNewsForm(); document.getElementById('addNewsForm').style.display = 'block'; }
+      else if(formType === 'jobs') { resetJobForm(); document.getElementById('addJobForm').style.display = 'block'; }
+      else if(formType === 'classifieds') { resetClassForm(); document.getElementById('addClassifiedForm').style.display = 'block'; }
+      else if(formType === 'ad') { document.getElementById('addAdForm').style.display = 'block'; }
+    }
+
+    function editItem(type, id) {
+      isAdminLoggedIn = true;
+      document.getElementById('adminModal').style.display = 'flex';
+      if(type === 'dir') {
+        showAdminForm('dir');
+        editDirectory(id);
+      } else if(type === 'news') {
+        showAdminForm('news');
+        editNews(id);
+      } else if(type === 'job') {
+        showAdminForm('jobs');
+        editJob(id);
+      } else if(type === 'classified') {
+        showAdminForm('classifieds');
+        editClassified(id);
+      }
+    }
+
+    function deleteItem(type, id) {
+      if(type === 'dir') deleteDirectory(id);
+      else if(type === 'news') deleteNews(id);
+      else if(type === 'job') deleteJob(id);
+      else if(type === 'classified') deleteClassified(id);
+    }
+
+    /* Directory Edit & Submit */
+    function resetDirForm() {
+      document.getElementById('editDirId').value = '';
+      document.getElementById('inputTitle').value = '';
+      document.getElementById('inputPerson').value = '';
+      document.getElementById('adminCategorySearch').value = '';
+      document.getElementById('inputCategory').value = '';
+      document.getElementById('inputPhone').value = '';
+      document.getElementById('inputAddress').value = '';
+      document.getElementById('inputVerified').checked = false;
+      base64DirImageTemp = '';
+      document.getElementById('dirImagePreviewBox').style.display = 'none';
+      document.getElementById('dirFormHeading').innerText = "1. نیا کاروبار شامل کریں:";
+      document.getElementById('dirSubmitBtn').innerText = "محفوظ کریں";
+    }
+
+    function editDirectory(id) {
+      const item = allListings.find(i => i.id === id);
+      if(!item) return;
+      document.getElementById('editDirId').value = item.id;
+      document.getElementById('inputTitle').value = item.title;
+      document.getElementById('inputPerson').value = item.person || '';
+      document.getElementById('adminCategorySearch').value = item.category;
+      document.getElementById('inputCategory').value = item.category;
+      document.getElementById('inputPhone').value = item.phone;
+      document.getElementById('inputAddress').value = item.address;
+      document.getElementById('inputVerified').checked = item.verified;
+      base64DirImageTemp = item.image || '';
+      if(item.image) {
+        document.getElementById('dirImagePreviewTag').src = item.image;
+        document.getElementById('dirImagePreviewBox').style.display = 'block';
+      } else {
+        document.getElementById('dirImagePreviewBox').style.display = 'none';
+      }
+      document.getElementById('dirFormHeading').innerText = "1. کاروبار کی معلومات میں ترمیم کریں:";
+      document.getElementById('dirSubmitBtn').innerText = "اپڈیٹ کریں";
+    }
+
+    function deleteDirectory(id) {
+      if(confirm('کیا آپ اس انٹری کو حذف کرنا چاہتے ہیں؟')) {
+        allListings = allListings.filter(i => i.id !== id);
+        localStorage.setItem('wzb_dir_100', JSON.stringify(allListings));
+        renderContent();
+      }
+    }
+
+    function handleDirectorySubmit(e) {
+      e.preventDefault();
+      const editId = document.getElementById('editDirId').value;
+      const cat = document.getElementById('inputCategory').value || document.getElementById('adminCategorySearch').value;
+
+      if(editId) {
+        const idx = allListings.findIndex(i => i.id == editId);
+        if(idx > -1) {
+          allListings[idx].title = document.getElementById('inputTitle').value;
+          allListings[idx].person = document.getElementById('inputPerson').value;
+          allListings[idx].category = cat;
+          allListings[idx].phone = document.getElementById('inputPhone').value;
+          allListings[idx].address = document.getElementById('inputAddress').value;
+          allListings[idx].verified = document.getElementById('inputVerified').checked;
+          if(base64DirImageTemp) allListings[idx].image = base64DirImageTemp;
+        }
+        alert('کاروباری ریکارڈ کامیابی سے اپڈیٹ کر دیا گیا ہے!');
+      } else {
+        const newItem = {
+          id: Date.now(),
+          title: document.getElementById('inputTitle').value,
+          person: document.getElementById('inputPerson').value,
+          category: cat,
+          phone: document.getElementById('inputPhone').value,
+          address: document.getElementById('inputAddress').value,
+          verified: document.getElementById('inputVerified').checked,
+          image: base64DirImageTemp
+        };
+        allListings.unshift(newItem);
+        alert('نیا کاروبار کامیابی سے شامل کر دیا گیا ہے!');
+      }
+
+      localStorage.setItem('wzb_dir_100', JSON.stringify(allListings));
+      resetDirForm();
+      closeAdminModal();
+      renderContent();
+    }
+
+    /* News Edit & Submit */
+    function resetNewsForm() {
+      document.getElementById('editNewsId').value = '';
+      document.getElementById('newsTitle').value = '';
+      document.getElementById('newsDetail').value = '';
+      document.getElementById('newsReporter').value = '';
+      base64ImageTemp = '';
+      document.getElementById('imagePreviewBox').style.display = 'none';
+      document.getElementById('newsFormHeading').innerText = "2. تازہ خبر شائع کریں:";
+      document.getElementById('newsSubmitBtn').innerText = "خبر شائع کریں";
+    }
+
+    function editNews(id) {
+      const item = allNews.find(n => n.id === id);
+      if(!item) return;
+      document.getElementById('editNewsId').value = item.id;
+      document.getElementById('newsTitle').value = item.title;
+      document.getElementById('newsDetail').value = item.detail;
+      document.getElementById('newsReporter').value = item.reporter;
+      base64ImageTemp = item.image || '';
+      if(item.image) {
+        document.getElementById('imagePreviewTag').src = item.image;
+        document.getElementById('imagePreviewBox').style.display = 'block';
+      } else {
+        document.getElementById('imagePreviewBox').style.display = 'none';
+      }
+      document.getElementById('newsFormHeading').innerText = "2. خبر میں ترمیم کریں:";
+      document.getElementById('newsSubmitBtn').innerText = "خبر اپڈیٹ کریں";
+    }
+
+    function deleteNews(id) {
+      if(confirm('کیا آپ اس خبر کو حذف کرنا چاہتے ہیں؟')) {
+        allNews = allNews.filter(n => n.id !== id);
+        localStorage.setItem('wzb_news_100', JSON.stringify(allNews));
+        updateTicker();
+        renderContent();
+      }
+    }
+
+    function handleNewsSubmit(e) {
+      e.preventDefault();
+      const editId = document.getElementById('editNewsId').value;
+      if(editId) {
+        const idx = allNews.findIndex(n => n.id == editId);
+        if(idx > -1) {
+          allNews[idx].title = document.getElementById('newsTitle').value;
+          allNews[idx].detail = document.getElementById('newsDetail').value;
+          allNews[idx].reporter = document.getElementById('newsReporter').value || 'سٹی رپورٹر';
+          if(base64ImageTemp) allNews[idx].image = base64ImageTemp;
+        }
+        alert('خبر کامیابی سے اپڈیٹ ہو گئی!');
+      } else {
+        const newNews = {
+          id: Date.now(),
+          title: document.getElementById('newsTitle').value,
+          detail: document.getElementById('newsDetail').value,
+          reporter: document.getElementById('newsReporter').value || 'سٹی رپورٹر',
+          datetime: new Date().toLocaleDateString('ur-PK'),
+          image: base64ImageTemp
+        };
+        allNews.unshift(newNews);
+        alert('خبر کامیابی سے شائع ہو گئی!');
+      }
+      localStorage.setItem('wzb_news_100', JSON.stringify(allNews));
+      updateTicker();
+      resetNewsForm();
+      closeAdminModal();
+      switchMainTab('news');
+    }
+
+    /* Job Edit & Submit */
+    function resetJobForm() {
+      document.getElementById('editJobId').value = '';
+      document.getElementById('jobTitle').value = '';
+      document.getElementById('jobCompany').value = '';
+      document.getElementById('jobSalary').value = '';
+      document.getElementById('jobPhone').value = '';
+      document.getElementById('jobLocation').value = '';
+      document.getElementById('jobDetail').value = '';
+      document.getElementById('jobFormHeading').innerText = "3. نئی نوکری پوسٹ کریں:";
+      document.getElementById('jobSubmitBtn').innerText = "نوکری لگائیں";
+    }
+
+    function editJob(id) {
+      const item = allJobs.find(j => j.id === id);
+      if(!item) return;
+      document.getElementById('editJobId').value = item.id;
+      document.getElementById('jobTitle').value = item.title;
+      document.getElementById('jobCompany').value = item.company;
+      document.getElementById('jobSalary').value = item.salary || '';
+      document.getElementById('jobPhone').value = item.phone;
+      document.getElementById('jobLocation').value = item.location;
+      document.getElementById('jobDetail').value = item.detail || '';
+      document.getElementById('jobFormHeading').innerText = "3. نوکری کی معلومات میں ترمیم کریں:";
+      document.getElementById('jobSubmitBtn').innerText = "نوکری اپڈیٹ کریں";
+    }
+
+    function deleteJob(id) {
+      if(confirm('کیا آپ اس نوکری کو حذف کرنا چاہتے ہیں؟')) {
+        allJobs = allJobs.filter(j => j.id !== id);
+        localStorage.setItem('wzb_jobs_100', JSON.stringify(allJobs));
+        renderContent();
+      }
+    }
+
+    function handleJobSubmit(e) {
+      e.preventDefault();
+      const editId = document.getElementById('editJobId').value;
+      if(editId) {
+        const idx = allJobs.findIndex(j => j.id == editId);
+        if(idx > -1) {
+          allJobs[idx].title = document.getElementById('jobTitle').value;
+          allJobs[idx].company = document.getElementById('jobCompany').value;
+          allJobs[idx].salary = document.getElementById('jobSalary').value;
+          allJobs[idx].phone = document.getElementById('jobPhone').value;
+          allJobs[idx].location = document.getElementById('jobLocation').value;
+          allJobs[idx].detail = document.getElementById('jobDetail').value;
+        }
+        alert('نوکری کامیابی سے اپڈیٹ ہو گئی!');
+      } else {
+        const newJob = {
+          id: Date.now(),
+          title: document.getElementById('jobTitle').value,
+          company: document.getElementById('jobCompany').value,
+          salary: document.getElementById('jobSalary').value,
+          phone: document.getElementById('jobPhone').value,
+          location: document.getElementById('jobLocation').value,
+          detail: document.getElementById('jobDetail').value
+        };
+        allJobs.unshift(newJob);
+        alert('نوکری کامیابی سے پوسٹ ہو گئی!');
+      }
+      localStorage.setItem('wzb_jobs_100', JSON.stringify(allJobs));
+      resetJobForm();
+      closeAdminModal();
+      switchMainTab('jobs');
+    }
+
+    /* Classifieds Edit & Submit (यहाँ ठीक कर दिया گیا ہے) */
+    function resetClassForm() {
+      document.getElementById('editClassId').value = '';
+      document.getElementById('classTitle').value = '';
+      document.getElementById('classPrice').value = '';
+      document.getElementById('classPhone').value = '';
+      document.getElementById('classDetail').value = '';
+      base64ClassImageTemp = '';
+      document.getElementById('classImagePreviewBox').style.display = 'none';
+      document.getElementById('classFormHeading').innerText = "4. خرید و فروخت / پراپرٹی:";
+      document.getElementById('classSubmitBtn').innerText = "اشتہار شائع کریں";
+    }
+
+    function editClassified(id) {
+      const item = allClassifieds.find(c => c.id === id);
+      if(!item) return;
+      document.getElementById('editClassId').value = item.id;
+      document.getElementById('classTitle').value = item.title;
+      document.getElementById('classCat').value = item.category;
+      document.getElementById('classPrice').value = item.price;
+      document.getElementById('classPhone').value = item.phone;
+      document.getElementById('classDetail').value = item.detail || '';
+      base64ClassImageTemp = item.image || '';
+      if(item.image) {
+        document.getElementById('classImagePreviewTag').src = item.image;
+        document.getElementById('classImagePreviewBox').style.display = 'block';
+      } else {
+        document.getElementById('classImagePreviewBox').style.display = 'none';
+      }
+      document.getElementById('classFormHeading').innerText = "4. اشتہار میں ترمیم کریں:";
+      document.getElementById('classSubmitBtn').innerText = "اشتہار اپڈیٹ کریں";
+    }
+
+    function deleteClassified(id) {
+      if(confirm('کیا آپ اس اشتہار کو حذف کرنا چاہتے ہیں؟')) {
+        allClassifieds = allClassifieds.filter(c => c.id !== id);
+        localStorage.setItem('wzb_classifieds_100', JSON.stringify(allClassifieds));
+        renderContent();
+      }
+    }
+
+    function handleClassifiedSubmit(e) {
+      e.preventDefault();
+      const editId = document.getElementById('editClassId').value;
+      if(editId) {
+        const idx = allClassifieds.findIndex(c => c.id == editId);
+        if(idx > -1) {
+          allClassifieds[idx].title = document.getElementById('classTitle').value;
+          allClassifieds[idx].category = document.getElementById('classCat').value;
+          allClassifieds[idx].price = document.getElementById('classPrice').value;
+          allClassifieds[idx].phone = document.getElementById('classPhone').value; // صحیح نام (allClassifieds) یہاں درست کر دیا گیا ہے
+          allClassifieds[idx].detail = document.getElementById('classDetail').value;
+          if(base64ClassImageTemp) allClassifieds[idx].image = base64ClassImageTemp;
+        }
+        alert('اشتہار کامیابی سے اپڈیٹ ہو گیا!');
+      } else {
+        const newClass = {
+          id: Date.now(),
+          title: document.getElementById('classTitle').value,
+          category: document.getElementById('classCat').value,
+          price: document.getElementById('classPrice').value,
+          phone: document.getElementById('classPhone').value,
+          detail: document.getElementById('classDetail').value,
+          image: base64ClassImageTemp
+        };
+        allClassifieds.unshift(newClass);
+        alert('اشتہار کامیابی سے شائع ہو گیا!');
+      }
+      localStorage.setItem('wzb_classifieds_100', JSON.stringify(allClassifieds));
+      resetClassForm();
+      closeAdminModal();
+      switchMainTab('classifieds');
+    }
+
+    /* Logo & Commercial Ad Submit Handler */
+    function handleAdSubmit(e) {
+      e.preventDefault();
+      if(base64LogoTemp) {
+        localStorage.setItem('wzb_site_logo', base64LogoTemp);
+        document.getElementById('siteLogoImg').src = base64LogoTemp;
+      }
+      if(base64CommercialTemp) {
+        localStorage.setItem('wzb_commercial_ad', base64CommercialTemp);
+        savedCommercialAd = base64CommercialTemp;
+        updateCommercialBannerDisplay();
+      }
+      alert('کمرشل بینر اور لوگو کامیابی سے پوسٹ / محفوظ ہو گئے!'); 
+      closeAdminModal();
+    }
+
+    function sendCustomerRequest(e) {
+      e.preventDefault();
+      const name = document.getElementById('reqName').value;
+      const phone = document.getElementById('reqPhone').value;
+      const category = document.getElementById('reqCategory').value || document.getElementById('reqCategorySearch').value;
+      const message = document.getElementById('reqMessage').value;
+
+      const whatsappNum = "923483439886";
+      const currentUrl = window.location.href.split('#')[0];
+      const text = `*ڈائریکٹری اندراج کی درخواست* 📝\n\n*کاروبار کا نام:* ${name}\n*رابطہ نمبر:* ${phone}\n*کیٹگری:* ${category}\n*تفصیل:* ${message}\n\n🌐 *پورٹل لنک:* ${currentUrl}`;
+      
+      window.open(`https://wa.me/${whatsappNum}?text=${encodeURIComponent(text)}`, '_blank');
+      e.target.reset();
+      document.getElementById('reqCategory').value = '';
+    }
+
+    function sendFeedback(e) {
+      e.preventDefault();
+      const text = document.getElementById('feedbackText').value;
+      const currentUrl = window.location.href.split('#')[0];
+      window.open(`https://wa.me/923483439886?text=${encodeURIComponent('*فیڈ بیک:* ' + text + '\n\n🌐 *پورٹل لنک:* ' + currentUrl)}`, '_blank');
+    }
+
+    function toggleTheme() { document.body.classList.toggle('dark-mode'); }
+
+    window.onload = () => {
+      if(savedLogo) document.getElementById('siteLogoImg').src = savedLogo;
+      if(savedCommercialAd) updateCommercialBannerDisplay();
+      updateLiveClock();
+      fetchWazirabadWeather();
+      trackVisitorStats();
+      initCategories();
+      updateTicker();
+      renderContent();
+    };
+  </script>
+</body>
+</html>
